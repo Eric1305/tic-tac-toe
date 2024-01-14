@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>tic tac toe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/tic-tac-toe.css">
+  </head>
+  <body>
+    <div class="header">
+      <div class="left-section">
+        <div class="difficulty-container">
+          <button class="easy-button js-easy-button">Easy</button>
+          <div class="win-ratio js-ratio-easy">Win Ratio: 0%</div>
+        </div>
+        <div class="difficulty-container">
+          <button class="unique-button js-unique-button">Unique</button>
+          <div class="win-ratio js-ratio-unique">Win Ratio: 0%</div>
+        </div>
+        <div class="difficulty-container">
+          <button class="insane-button js-insane-button">Insane</button>
+          <div class="win-ratio js-ratio-insane">Win Ratio: 0%</div>
+        </div>
+      </div>
+      <div class="middle-section">
+        <img class="title-image" src="icons/tic-tac-toe-title.png">
+      </div>
+      <div class="right-section">
+        Coded by: Eric Lee
+      </div>
+    </div>
+    <div class="difficulty-title-container">
+      <div class="difficulty-outline difficulty-outline-easy js-difficulty-outline">
+        <div class="difficulty-label">Difficulty:</div>
+        <div class="difficulty-title-easy js-difficulty-title">Easy</div>
+      </div>
+    </div>
+    <div class="tic-tac-toe-grid">
+      <button class="tic-tac-toe-button-inactive button-1 js-tic-tac-toe-1">T</button>
+      <button class="tic-tac-toe-button-inactive button-2 js-tic-tac-toe-2">I</button>
+      <button class="tic-tac-toe-button-inactive button-3 js-tic-tac-toe-3">C</button>
+      <button class="tic-tac-toe-button-inactive button-4 js-tic-tac-toe-4">T</button>
+      <button class="tic-tac-toe-button-inactive button-5 js-tic-tac-toe-5">A</button>
+      <button class="tic-tac-toe-button-inactive button-6 js-tic-tac-toe-6">C</button>
+      <button class="tic-tac-toe-button-inactive button-7 js-tic-tac-toe-7">T</button>
+      <button class="tic-tac-toe-button-inactive button-8 js-tic-tac-toe-8">O</button>
+      <button class="tic-tac-toe-button-inactive button-9 js-tic-tac-toe-9">E</button>
+    </div>
+    <div class="button-container">
+      <button class="start-button js-start-button">Start</button>
+      <button class="reset-button js-reset-button">Reset</button>
+    </div>
+    <div class="decision js-decision"></div>
+    <div class="player-computer-container">
+      <div class="player-container">
+        <div class="player-label">PLAYER</div>
+        <div class="player-wins js-player-wins"></div>
+      </div>
+      <div class="player-computer-middle"></div>
+      <div class="computer-container">
+        <div class="computer-label">COMPUTER</div>
+        <div class="computer-wins js-computer-wins"></div>
+      </div>
+    </div>
+    <script src="scripts/tic-tac-toe.js"></script>
+  </body>
+</html>
